@@ -3,50 +3,67 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
     <meta charset="utf-8">
-    <meta property="og:title" content="QuantumLLMInstruct" />
+    <meta property="og:title" content="Qonfusion" />
     <meta property="og:description" content="Automating Quantum Circuit Design with Large Language Models (LLMs) using Trotter-Suzuki Decomposition." />
-    <meta property="og:url" content="https://your-site-url.com/" />
-    <meta property="og:image" content="https://your-site-url.com/static/images/preview.jpeg" />
+    <meta property="og:url" content="https://qonfusion.github.io/" />
+    <meta property="og:image" content="https://qonfusion.github.io//static/images/preview.jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />
-    <meta name="description" content="QuantumLLMInstruct: Automating Quantum Circuit Design with LLMs and Trotter-Suzuki Decomposition." />
-    <meta name="keywords" content="quantum computing, Large Language Models, quantum circuits, Hamiltonians, Trotter-Suzuki decomposition, QASM, CoT reasoning, ToRA reasoning" />
+    <meta name="description"
+        content="Automating Quantum Circuit Design with Large Language Models (LLMs) using Trotter-Suzuki Decomposition." />
+    <meta name="keywords"
+        content="diffusion models, generative models, zero-shot learning, supervised learning, classification, Bayes' theorem, evidence lower bound (ELBO), Monte Carlo estimation, computer vision, deep learning, robustness" />
     <meta name="viewport" content="initial-scale=1" />
     
-    <title>QuantumLLMInstruct: Automating Quantum Circuit Design</title>
+    <title>Gaussian QRNG</title>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYWGEJGP6S"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-RYWGEJGP6S');
-    </script>
-
+    
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
     <link rel="stylesheet" href="./static/css/bulma.min.css">
     <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="./static/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/iag3ven.css">
 
-    <!-- MathJax -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-coy.min.css"/> -->
+    <link rel="stylesheet" href="./static/css/prism.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.min.js">
+    </script>
+
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔎</text></svg>">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+
+    <!-- mathjax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <style>
         code.python {
-            display: block;
-            white-space: pre;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px;
-            background-color: #f9f9f9;
-            color: #333;
+          display: block;
+          white-space: pre;
+          border: 1px solid #ccc;
+          padding: 10px;
+          margin: 10px;
+          background-color: #f9f9f9;
+          color: #333;
         }
-    </style>
+        /* Add more styles for keywords, numbers, etc. if needed */
+      </style>
 </head>
 
 <body>
@@ -55,26 +72,76 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <p style="padding: 20px;"></p>
+                        <p style="padding: 20px;" />
                         <h1 class="title is-1 publication-title">
-                            <span id="main-title">QuantumLLMInstruct</span>
-                        </h1>
-                        <h2 class="subtitle">Automating Quantum Circuit Design with Large Language Models and Trotter-Suzuki Decomposition</h2>
-                        <div class="is-size-5 publication-authors">
-                            <span class="author-block">
-                                <a href="https://t.me/BoltzmannQ" target="_blank">Shlomo Kashani</a>
+                            <span id="main-title">
+                                &#x27E8;QuantumLLMInstruct&#x27E9;
+                                Automating Quantum Circuit Design with Large Language Models (LLMs) using Trotter-Suzuki Decomposition.
                             </span>
+                        </h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- TODO: FIX -->
+                            <span class="author-block">
+                                <a href="https://github.com/BoltzmannEntropy/" target="_blank">Shlomo Kashani.</a>
+                            </span>&nbsp;&nbsp;
                         </div>
-                        <time datetime="2024-10-09">October 9, 2024</time><br>
-                        <div class="buttons is-centered">
-                            <button class="external-link button is-medium is-ghost publication-links is-rounded">
-                                <a href="https://github.com/your-repository-url" target="_blank">
-                                    <span class="icon is-small">
-                                        <i class="fab fa-github"></i>
-                                    </span>
-                                    <span>GitHub Repository</span>
-                                </a>
-                            </button>
+                        <p style="padding: 0.25rem;" />
+                        <div class="is-size-5 publication-authors">
+                       
+                        </div>
+                        <div id="method-overview-wrapper">
+                            <img src="./static/images/jhu.png" alt="JHU"
+                                class="method-overview-full-img  method-overview" draggable="false" width="35%" />
+                        </div>
+                        <br>
+                                <time datetime="2023-08-22">October 01, 2024.</time><br>
+                        <p style="padding: 20px;" />
+                        
+                          
+                          <!-- ArXiv abstract Link -->
+                            <span class="link-block">
+                              <a href="https://arxiv.org/abs/" target="_blank"
+                              class="external-link button is-normal is-rounded is-dark">
+                              <span class="icon">
+                                <i class="ai ai-arxiv"></i>
+                              </span>
+                              <span>Paper</span>
+                            </a>
+                          </span>
+        
+                          <!-- Github link -->
+                          <span class="link-block">
+                            <a href="https://github.com/" target="_blank"
+                            class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                              <i class="fab fa-github"></i>
+                            </span>
+                            <span>Code</span>
+                          </a>
+                        </span>
+        
+                        <!-- HF Demo -->
+                        <span class="link-block">
+                          <a href="https://huggingface.co/spaces/BoltzmannEntropy/QuantumLLMInstruct/" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                              <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" style="width: 1em; height: 1em;">
+                            </span>
+                            <span>HuggingFace Space Demo</span>
+                          </a>
+                        </span>
+        
+                        <!-- HF Demo -->
+                        
+                        <!-- HF Demo -->
+                        <span class="link-block">
+                          <a href="https://huggingface.co/spaces/BoltzmannEntropy/QuantumLLMInstruct/settings" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                              <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" style="width: 1em; height: 1em;">
+                            </span>
+                            <span>HuggingFace Datasets</span>
+                          </a>
+                        </span>   
+                       
                         </div>
                     </div>
                 </div>
@@ -82,34 +149,78 @@
         </div>
     </section>
 
-    <!-- Abstract Section -->
+    <!-- hack to pull the below up vertically -->
+    <span style="display:block; margin-top:-1.75em;"/>
+
+        <!-- Method Overview -->
+    <section class="section" id="method-overview">
+        <div class="container is-max-widescreen">
+            <div class="columns is-centered has-text-centered">
+                <div class="column" style="border-radius: 10px; background-color: rgb(245,245,245)">
+                    <h2 class="title is-3">
+                        <span class="method-name">"Quantum Hamiltonian Dataset (Draft, WIP)."</span>
+                    </h2>
+                    <p style="padding: 10px;" />
+                    <div id="method-overview-wrapper">
+                        <img src="./static/images/ham001.png" alt="Dataset Generation."
+                            class="method-overview-full-img  method-overview" draggable="false" width="50%"/>
+                    </div>
+                            <p style="padding: 10px;" />
+                            <b>An illustrative depiction of our proposed pipeline.</b>    
+                        <div class="method-overview-text has-text-justified">
+                          <!-- Dataset Creation Process Section -->
+<section class="section">
+    
+        <div class="content has-text-justified">
+            <p>
+                <strong>QuantumLLMInstruct (QLMMI)</strong> automates the translation of Hamiltonians into operational quantum circuits, tackling intricate quantum tasks with symbolic and numerical manipulations. By leveraging reasoning frameworks such as Chain of Thought (CoT) and Task-Oriented Reasoning and Action (ToRA), the dataset aims to bridge the gap between theory and practical quantum circuit synthesis.
+            </p>
+            <p>
+                <span style="border-radius: 50%; border: 2px solid black; padding: 1px; font-weight: bold;">1</span>
+                Phase 1: Synthetic Hamiltonians are programmatically generated, offering both analytical solutions and physical properties like eigenvalues and Trotter-Suzuki decompositions.
+            </p>
+            <p>
+                <span style="border-radius: 50%; border: 2px solid black; padding: 1px; font-weight: bold;">2</span>
+                Phase 2: The dataset is enriched using CoT and ToRA methodologies to break down complex quantum problems into stepwise processes, enhancing the LLMs' reasoning abilities.
+            </p>
+            <p>
+                <span style="border-radius: 50%; border: 2px solid black; padding: 1px; font-weight: bold;">3</span>
+                Phase 3: The enriched dataset is verified through an ensemble of LLMs, employing self-critique mechanisms and CoT methodologies to ensure the accuracy of quantum circuit generation.
+            </p>
+        </div>
+    
+</section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Method Overview -->
+
+    <!-- <p style="padding: 10px;" /> -->
+
     <section class="section">
         <div class="container is-max-desktop">
+            <!-- Abstract. -->
             <div class="columns is-centered has-text-centered">
                 <div class="column is-three-quarters">
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            QuantumLLMInstruct (QLMMI) is a groundbreaking dataset designed to enhance Large Language Models (LLMs) in automating quantum circuit synthesis. By integrating Chain of Thought (CoT) and Task-Oriented Reasoning and Action (ToRA) frameworks with advanced computational tools, QLMMI facilitates symbolic manipulation of Hamiltonians and their translation into practical quantum circuits via Trotter-Suzuki decompositions and Quantum Assembly Language (QASM) code. The dataset is structured to support future exploration into the efficacy of these reasoning frameworks in automating complex quantum tasks.
-                        </p>
+                            <p>
+                                QuantumLLMInstruct (QLMMI) is a groundbreaking dataset designed to enhance Large Language Models (LLMs) in automating quantum circuit synthesis. 
+                                By integrating Chain of Thought (CoT) and Task-Oriented Reasoning and Action (ToRA) frameworks with advanced computational tools, 
+                                QLMMI facilitates symbolic manipulation of Hamiltonians and their translation into practical quantum circuits via Trotter-Suzuki 
+                                decompositions and Quantum Assembly Language (QASM) code. The dataset is structured to support future exploration into the efficacy 
+                                of these reasoning frameworks in automating complex quantum tasks.
+                        <br><br>
+                            <img src="./static/images/ham002.png" alt="Quantum Gaussian Generator."
+                            class="method-overview-full-img  method-overview" draggable="false" /> <br>
+                            </p><br>                        
+                        </p>                        
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Method Overview -->
-    <section class="section" id="method-overview">
-        <div class="container is-max-widescreen">
-            <div class="columns is-centered has-text-centered">
-                <div class="column" style="border-radius: 10px; background-color: rgb(245,245,245)">
-                    <h2 class="title is-3">Quantum Circuit Automation using LLMs</h2>
-                    <div id="method-overview-wrapper">
-                        <img src="./static/images/quantum_circuits.png" alt="Quantum Circuits" class="method-overview-full-img  method-overview" draggable="false" />
-                    </div>
-                    <p>
-                        QuantumLLMInstruct (QLMMI) automates the translation of Hamiltonians into operational quantum circuits, tackling intricate quantum tasks with symbolic and numerical manipulations. By leveraging reasoning frameworks such as Chain of Thought (CoT) and Task-Oriented Reasoning and Action (ToRA), the dataset aims to bridge the gap between theory and practical quantum circuit synthesis.
-                    </p>
                 </div>
             </div>
         </div>
@@ -135,13 +246,69 @@
                 <p>Our next steps involve fine-tuning models like <b>Qwen-2.5-math</b> and <b>Llama3.1-8B-Instruct</b> on the QLMMI dataset to evaluate their effectiveness in automating quantum circuit synthesis. We anticipate that QuantumLLMInstruct will significantly contribute to the development of efficient and precise quantum circuits.</p>
             </div>
         </div>
+    </section>    
+
+    <section class="section" id="paper">
+        <div class="container is-mobile">
+            <div class="columns is-centered has-text-centered">
+                <div class="container content">
+                    <h2 class="title is-3">BibTeX</h2>
+                    <div id="bibtex" class="column has-text-justified is-centered">
+                        <!-- https://github.com/SaswatPadhi/prismjs-bibtex -->
+                        <pre><code class="language-bibtex">@misc{sk2025QuantumLLMInstruct,
+    title={QuantumLLMInstruct: Automating Quantum Circuit Design with LLMs and Trotter-Suzuki Decomposition.},
+    author={Shlomo Kashani},
+    year={2025},
+    eprint={},
+    archivePrefix={arXiv},
+    primaryClass={}
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
-        <div class="content has-text-centered">
-            <p>© 2024 QuantumLLMInstruct</p>
-        </div>
+        <div class="container">
+            <div class="content has-text-centered">
+                <!-- TODO: UPDATE -->
+                <a class="icon-link" href="https://arxiv.org/" target="_blank">
+                    <i class="ai ai-arxiv"></i>
+                </a>
+                &nbsp;
+                <!-- TODO: UPDATE -->
+                <a class="icon-link" href="./static/docs/" target="_blank">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                
+                &nbsp;
+                <a class="icon-link" href="https://github.com/"
+                    target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- <div class="columns is-centered">
+                <div class="content">
+                    <p>
+                        Page source code was adapted from
+                        <a href="https://nerfies.github.io" target="_blank">here</a>
+                        and
+                        <a href="https://internet-explorer-ssl.github.io"
+                            target="_blank">here</a>,
+                        and can be found in <a
+                            href="https://github.com/diffusion-classifier/diffusion-classifier.github.io"
+                            target="_blank">this repository</a>.
+                    </p>
+                </div>
+            </div> -->
     </footer>
+
+    <script src="./static/js/index.js"></script>
+    <script src="./static/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.js"
+        integrity="sha256-+dK6uqUp/DnP6ef97s8XcoynBnGe5vM5gvBECH0EB3U=" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
