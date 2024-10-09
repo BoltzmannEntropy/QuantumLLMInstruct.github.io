@@ -216,9 +216,88 @@
                                 decompositions and Quantum Assembly Language (QASM) code. The dataset is structured to support future exploration into the efficacy 
                                 of these reasoning frameworks in automating complex quantum tasks.
                         <br><br>
-                            <img src="./static/images/ham002.png" alt="Quantum Gaussian Generator."
-                            class="method-overview-full-img  method-overview" draggable="false" /> <br>
-                            </p><br>                        
+                                
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoT Reasoning for Hamiltonian Analytical Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .tcolorbox {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .small {
+            font-size: 0.8em;
+        }
+        .sepline {
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+        .caption {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+
+    <div class="tcolorbox">
+        <div class="small">
+            <strong>CoT Reasoning for Hamiltonian Analytical Solution</strong>
+            <div class="sepline"></div>
+            <strong>Problem Statement</strong><br>
+            Solve the Hamiltonian \(H = X_1 + Z_1\) analytically by finding its matrix form and eigenvalues.
+            <div class="sepline"></div>
+            <strong>LLM Solution: Chain of Thought Reasoning</strong><br>
+            <strong>Step 1: Express Hamiltonian in matrix form.</strong><br>
+            The Pauli matrix \(X_1\) corresponds to \(\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}\), and \(Z_1\) corresponds to \(\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}\). Adding these two matrices gives the matrix representation of \(H\):
+            \[
+            H = X_1 + Z_1 = \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}
+            \]
+            We now have the Hamiltonian in matrix form.
+            <strong>Step 2: Set up the eigenvalue equation.</strong><br>
+            To find the eigenvalues of the Hamiltonian, we solve the equation \( H \vec{v} = \lambda \vec{v} \), where \(\lambda\) is the eigenvalue and \(\vec{v}\) is the eigenvector. This can be written as the determinant equation \( \det(H - \lambda I) = 0 \), where \(I\) is the identity matrix. Substituting \(H\) and \(I\), we get:
+            \[
+            \det\begin{bmatrix} 1 - \lambda & 1 \\ 1 & -1 - \lambda \end{bmatrix} = 0
+            \]
+            <em>Explanation</em>: We subtract \(\lambda\) times the identity matrix from \(H\) and set the determinant to zero to find the eigenvalues.
+            <strong>Step 3: Solve the characteristic equation.</strong><br>
+            Expanding the determinant of the matrix gives the characteristic equation:
+            \[
+            (1 - \lambda)(-1 - \lambda) - 1 = \lambda^2 - 1 = 0
+            \]
+            <em>Explanation</em>: By expanding the determinant, we derive a quadratic equation in \(\lambda\), which represents the characteristic equation of the matrix.
+            <strong>Step 4: Solve for the eigenvalues.</strong><br>
+            Solving the quadratic equation \(\lambda^2 - 1 = 0\) gives the eigenvalues:
+            \[
+            \lambda = \pm 1
+            \]
+            <em>Explanation</em>: The solutions to this simple quadratic equation are \(\lambda = 1\) and \(\lambda = -1\), which are the eigenvalues of the Hamiltonian.
+            <strong>Step 5: Verify the eigenvalues.</strong><br>
+            To verify the solution, we substitute \(\lambda = 1\) and \(\lambda = -1\) back into the eigenvalue equation and check that the determinant condition holds. This confirms the correctness of the eigenvalues.
+            <strong>Final result</strong>: The eigenvalues of the Hamiltonian are \([1, -1]\), and the matrix form of the Hamiltonian is:
+            \[
+            H = \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}
+            \]
+        </div>
+    </div>
+    <div class="caption">
+        Example of CoT reasoning for solving a Hamiltonian analytically using an LLM. Each step follows from the previous, guiding the reasoning process toward the correct solution.
+    </div>
                         </p>                        
                     </div>
                 </div>
