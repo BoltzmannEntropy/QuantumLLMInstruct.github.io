@@ -7,10 +7,10 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <meta charset="utf-8">
-    <meta property="og:title" content="Qonfusion" />
+    <meta property="og:title" content="QuantumLLMInstruct" />
     <meta property="og:description" content="Automating Quantum Circuit Design with Large Language Models (LLMs) using Trotter-Suzuki Decomposition." />
-    <meta property="og:url" content="https://qonfusion.github.io/" />
-    <meta property="og:image" content="https://qonfusion.github.io//static/images/preview.jpeg" />
+    <meta property="og:url" content="https://diffusion-book.com/QuantumLLMInstruct.github.io/" />
+    
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />
     <meta name="description"
@@ -99,12 +99,12 @@
         <div class="hero-body">
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
-                    <div class="column has-text-centered">
+                    <div class="column has-text-centered">                        
                         <p style="padding: 20px;" />
                         <h1 class="title is-1 publication-title">
                             <span id="main-title">
                                 &#x27E8;QuantumLLMInstruct&#x27E9;
-                                A Comprehensive Dataset for LLM-Based Quantum Circuit Synthesis and Hamiltonian Analysis.
+                                A 500k LLM Instruction-Tuning Dataset with Problem-Solution Pairs for Quantum Computing.
                             </span>
                         </h1>
                         <div class="is-size-5 publication-authors">
@@ -122,10 +122,18 @@
                                 class="method-overview-full-img  method-overview" draggable="false" width="35%" />
                         </div>
                         <br>
-                                <time datetime="2023-08-22">October 01, 2024.</time><br>
+                                <time datetime="2023-08-22">January 01, 2025.</time><br>
                         <p style="padding: 20px;" />
                         
-                          
+                        <span class="link-block">
+                            <a href="https://diffusion-book.com/QuantumLLMInstruct.github.io/" target="_blank"
+                            class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                              <i class="fab fa-github"></i>
+                            </span>
+                            <span>github.io</span>
+                          </a>
+                        </span>  
                           <!-- ArXiv abstract Link -->
                             <span class="link-block">
                               <a href="https://arxiv.org/abs/" target="_blank"
@@ -147,7 +155,9 @@
                             <span>Code</span>
                           </a>
                         </span>
-        
+                        
+                        
+
                         <!-- HF Demo -->
                         <span class="link-block">
                           <a href="https://huggingface.co/spaces/BoltzmannEntropy/QuantumLLMInstruct/" target="_blank" class="external-link button is-normal is-rounded is-dark">
@@ -177,81 +187,100 @@
         </div>
     </section>
 
-    <!-- hack to pull the below up vertically -->
-    <span style="display:block; margin-top:-1.75em;"/>
-
-        <!-- Method Overview -->
+    
     <section class="section" id="method-overview">
         <div class="container is-max-widescreen">
             <div class="columns is-centered has-text-centered">
                 <div class="column" style="border-radius: 10px; background-color: rgb(245,245,245)">
                     <h2 class="title is-3">
-                        <span class="method-name">"Quantum Hamiltonian Dataset (Draft, WIP)."</span>
+                        <span class="method-name">"QuantumLLMInstruct."</span>
                     </h2>
-                    <p style="padding: 10px;" />
+                    <iframe
+                    src="https://huggingface.co/datasets/BoltzmannEntropy/QuantumLLMInstruct/embed/viewer"
+                    frameborder="0"
+                    width="100%"
+                height="560px"
+                ></iframe>
                     <div id="method-overview-wrapper">
-                        <img src="./static/images/text25.jpg" alt="Dataset Generation."
-                            class="method-overview-full-img  method-overview" draggable="false" width="100%"/>
+                        <img src="./static/images/qlmmi-detailed-flowchart.jpg" alt="Dataset Creation Workflow"
+                            class="method-overview-full-img method-overview" draggable="false" width="100%"/>
+                        <p style="padding: 10px;" />
+                        <b>Comprehensive quantum computing instruction-pair domains spanning over 90 primary fields.</b>
                     </div>
-                            <p style="padding: 10px;" />
-                            <b>An illustrative depiction of our proposed pipeline.</b>    
-                        <div class="method-overview-text has-text-justified">
-                          <!-- Dataset Creation Process Section -->
-<section class="section">
-    <div class="content has-text-justified">
-        <p>
-            <strong>QuantumLLMInstruct (QLMMI)</strong> facilitates the automated translation of Hamiltonians into functional quantum circuits by tackling complex quantum tasks that require both symbolic manipulation and numerical approximation. By leveraging advanced reasoning frameworks such as Chain of Thought (CoT) and Task-Oriented Reasoning and Action (ToRA), the dataset provides a comprehensive bridge from theoretical quantum mechanics to practical quantum circuit synthesis.
-        </p>
-        <p>
-            <span style="border-radius: 50%; border: 2px solid black; padding: 1px; font-weight: bold;">1</span>
-            <strong>Phase 1:</strong> Synthetic Hamiltonians are programmatically generated along with their analytical solutions. This phase includes physical properties such as eigenvalues, QASM code, and Trotter-Suzuki decompositions, ensuring wide coverage of quantum phenomena.
-        </p>
-        <p>
-            <span style="border-radius: 50%; border: 2px solid black; padding: 1px; font-weight: bold;">2</span>
-            <strong>Phase 2:</strong> The dataset is enriched through the use of CoT and ToRA methodologies, enabling LLMs to break down intricate quantum problems into stepwise solutions. This process enhances the reasoning capabilities of the LLMs, particularly in generating Ansatz and optimised quantum circuits.
-        </p>
-        <p>
-            <span style="border-radius: 50%; border: 2px solid black; padding: 1px; font-weight: bold;">3</span>
-            <strong>Phase 3:</strong> An ensemble of LLMs, equipped with self-critique mechanisms, rigorously evaluates and selects the most accurate solutions. This phase ensures the validity and precision of the quantum circuits generated by employing CoT methodologies for verification.
-        </p>
-    </div>
-    
-    
-</section>
-
-                        </div>
+                    <div class="method-overview-text has-text-justified">
+                        <section class="section">
+                            <div class="content has-text-justified">
+                                <p>
+                                    <strong>QuantumLLMInstruct (QLMMI)</strong> is a groundbreaking dataset featuring over 500,000 meticulously curated instruction-following problem-solution pairs tailored for quantum computing. Spanning 90 predefined domains and hundreds of subdomains, QLMMI empowers Large Language Models (LLMs) to tackle intricate quantum challenges, setting a new standard for quantum-focused datasets.
+                                </p>
+                                <p>
+                                    QLMMI leverages advanced reasoning techniques to address unique quantum computing tasks, including Hamiltonian simulations, circuit optimization, and algorithm design. These tasks demand high reasoning complexity, such as solving quantum models with Yang-Baxter equations or designing circuits for quantum algorithms. QLMMI integrates LLM-driven automation for scalable problem generation, solution development, and validation.
+                                </p>
+                                <h3 class="title is-4">Features and Workflow</h3>
+                                <p>
+                                    The creation of QLMMI follows a robust four-stage process:
+                                </p>
+                                <ul>
+                                    <li><strong>Stage I: Problem Generation</strong> – Foundational problems are generated using carefully crafted templates, ensuring domain specificity and mathematical rigor. Tasks include synthetic Hamiltonians, QASM code generation, Jordan-Wigner transformations, and Trotter-Suzuki decompositions for models such as Ising and Heisenberg spin chains. Problems are enriched with metadata such as domain, difficulty level, and computational requirements.</li>
+                                    <li><strong>Stage II: Solution Development</strong> – Structured prompts guide LLMs to generate detailed solutions in LaTeX format, ensuring clarity, correctness, and domain specificity. Models like Qwen-2-coder-instruct are optimized for producing rigorous, step-by-step derivations.</li>
+                                    <li><strong>Stage III: Dataset Enrichment</strong> – Advanced reasoning frameworks like Chain-of-Thought (CoT) and Task-Oriented Reasoning and Action (ToRA) enhance the dataset's quality and diversity. These methods enable LLMs to solve complex tasks, including randomized circuit optimization and Gibbs state preparation.</li>
+                                    <li><strong>Stage IV: Validation</strong> – A Judge LLM rigorously evaluates problem-solution pairs using self-critique techniques, ensuring high accuracy and reliability. This automated quality assurance minimizes human oversight.</li>
+                                </ul>
+                                <h3 class="title is-4">Quantum Physics Domains</h3>
+                                <p>
+                                    QLMMI spans a diverse range of 90 predefined quantum domains, including:
+                                </p>
+                                <ul>
+                                    <li><strong>Synthetic Hamiltonians:</strong> Ground-state energy computations and time evolution.</li>
+                                    <li><strong>Quantum Spin Chains:</strong> Models such as Ising, Heisenberg, and advanced integrable systems.</li>
+                                    <li><strong>Yang-Baxter Solvability:</strong> Exploring solvability in quantum integrable models.</li>
+                                    <li><strong>Trotter-Suzuki Decompositions:</strong> Simulating Hamiltonian dynamics efficiently.</li>
+                                    <li><strong>Quantum Phase Estimation:</strong> A cornerstone of quantum algorithms.</li>
+                                    <li><strong>Cluster State Verification:</strong> Critical in quantum error correction and communication.</li>
+                                    <li><strong>Variational Quantum Eigensolvers (VQE):</strong> Solving for molecular energies and optimization tasks.</li>
+                                    <li><strong>Randomized Circuit Optimization:</strong> Enhancing algorithm performance under noisy conditions.</li>
+                                    <li><strong>Quantum Signal Processing:</strong> Applications in filtering and spectral analysis.</li>
+                                    <li><strong>Quantum Thermodynamics:</strong> Gibbs state preparation and entropy calculations.</li>
+                                </ul>
+                                
+                                <p>
+                                    Beyond these predefined domains, LLMs demonstrate emergent capabilities by autonomously generating new quantum fields, showcasing their adaptability and scalability in problem-solving. This adaptability ensures QLMMI remains a dynamic and versatile resource.
+                                </p>
+                                <h3 class="title is-4">Key Contributions</h3>
+                                <ul>
+                                    <li><strong>Comprehensive Dataset:</strong> Over 500,000 curated quantum problem-solution pairs enable fine-tuning LLMs for quantum-specific tasks.</li>
+                                    <li><strong>Scalable Framework:</strong> A four-stage workflow combining templates, CoT, and ToRA ensures both quality and adaptability.</li>
+                                    <li><strong>Innovative Infrastructure:</strong> Integration of tools like DuckDB and Gradio for efficient management and interactive exploration.</li>
+                                    <li><strong>Open Access:</strong> Public datasets, generation tools, and training scripts foster collaboration in quantum computing research.</li>
+                                </ul>
+                                <p>
+                                    
+                                    QLMMI bridges the gap between LLM advancements and quantum computing challenges, enabling scalable and precise solutions. With its comprehensive domain coverage, rigorous methodologies, and open-access design, QLMMI sets a new benchmark for instructional datasets in computational science.
+                                </p>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--/ Method Overview -->
-
+        
     <!-- <p style="padding: 10px;" /> -->
+
+   
 
     <section class="section">
         <div class="container is-max-desktop">
             <!-- Abstract. -->
             <div class="columns is-centered has-text-centered">
                 <div class="column is-three-quarters">
-                    <h2 class="title is-3">Abstract</h2>
-                    <div class="content has-text-justified">
-                        <p>
-                            <p>
-                                The current study introduces QuantumLLMInstruct (QLMMI), a dataset with the potential to significantly enhance Large Language Models' capabilities in automating quantum circuit synthesis. Our objective is to merge advanced reasoning frameworks, such as Chain of Thought (CoT) and Task-Oriented Reasoning and Action (ToRA), and Chain-of-Programming (CoP) with state-of-the-art computational tools to address complex challenges in quantum mechanics. By concentrating on the symbolic manipulation of Hamiltonian equations through Trotter-Suzuki decompositions and translating these into operational QASM code, we aim to narrow the divide between theoretical formulations and practical implementations in the realm of quantum computing.                         <br><br>
+                    <h2 class="title is-3">Examples</h2>
+                    <div class="content has-text-justified">                                    
 
+                     
 
-At the heart of this research lies the creation of QLMMI—a dataset rich enough to train Large Language Models (LLMs) to analytically solve Hamiltonians and convert these solutions into tangible quantum circuits.  The phrase "analytically solving Hamiltonians" is central to this work and includes both symbolical manipulate these Hamiltonians (as done in theoretical physics) and numerical approximations that are being applied.                         <br><br>
-
-
-It is important to clarify that our study does not set out to definitively validate the efficacy of Chain of Thought and Task-Oriented Reasoning and Action frameworks in this context; rather, it aims to offer this extensive dataset as a foundation for future academic exploration. While the current focus is on developing the dataset, future work will involve fine-tuning LLM models, including \textbf{Qwen-2.5-math} and \textbf{Llama3.1-8B-Instruct}, to further explore their performance. We believe this dataset will significantly contribute to advancements in quantum computing, particularly in synthesizing more efficient and precise quantum circuits.                         <br><br>
-
-The development of this dataset unfolds across three distinct but interconnected phases: first, we generate synthetic Hamiltonians through a programmatic approach; second, we enrich the dataset with Chain of Thought and Task-Oriented Reasoning and Action methodologies to refine the reasoning abilities of LLMs; third, we employ an ensemble of LLMs complemented by self-critique mechanisms for rigorous solution verification.                         <br><br>
-
-                        <br><br>
-                                
-    
-
+                        <img src="./static/images/quantum-domains-circles.png" alt="Dataset Creation Workflow"
+                            class="method-overview-full-img method-overview" draggable="false" width="100%"/>
     <div class="tcolorbox">
         <div class="small">
             <strong>CoT Reasoning for Hamiltonian Analytical Solution</strong>
@@ -302,24 +331,14 @@ The development of this dataset unfolds across three distinct but interconnected
         </div>
     </section>
 
-    <!-- Dataset Creation Phases -->
-    <section class="section">
-        <div class="container is-max-desktop">
-            <h2 class="title is-3">Dataset Creation Process</h2>
-            <div class="content has-text-justified">
-                <p><strong>Phase 1:</strong> Synthetic Hamiltonians are programmatically generated, offering both analytical solutions and physical properties like eigenvalues and Trotter-Suzuki decompositions.</p>
-                <p><strong>Phase 2:</strong> The dataset is enriched using CoT and ToRA to break down complex quantum problems into stepwise processes, enhancing the LLMs’ reasoning abilities.</p>
-                <p><strong>Phase 3:</strong> The enriched dataset is verified through an ensemble of LLMs, using self-critique and CoT methodologies to ensure the accuracy of quantum circuit generation.</p>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Additional Sections (Optional for more details) -->
     <section class="section">
         <div class="container is-max-desktop">
             <h2 class="title is-3">Future Work</h2>
             <div class="content has-text-justified">
-                <p>Our next steps involve fine-tuning models like <b>Qwen-2.5-math</b> and <b>Llama3.1-8B-Instruct</b> on the QLMMI dataset to evaluate their effectiveness in automating quantum circuit synthesis. We anticipate that QuantumLLMInstruct will significantly contribute to the development of efficient and precise quantum circuits.</p>
+                <p>Our next steps involve fine-tuning models like <b>Qwen-2.5-math</b> family of models on the QLMMI dataset to evaluate their effectiveness in automating quantum circuit synthesis. We anticipate that QuantumLLMInstruct will significantly contribute to the development of efficient and precise quantum circuits.</p>
             </div>
         </div>
     </section>    
@@ -332,7 +351,7 @@ The development of this dataset unfolds across three distinct but interconnected
                     <div id="bibtex" class="column has-text-justified is-centered">
                         <!-- https://github.com/SaswatPadhi/prismjs-bibtex -->
                         <pre><code class="language-bibtex">@misc{sk2025QuantumLLMInstruct,
-    title={QuantumLLMInstruct: Automating Quantum Circuit Design with LLMs and Trotter-Suzuki Decomposition.},
+    title={QuantumLLMInstruct:  A 500k LLM Instruction-Tuning Dataset with Problem-Solution Pairs for Quantum Computing.},
     author={Shlomo Kashani},
     year={2025},
     eprint={},
